@@ -9,7 +9,7 @@ from langchain_community.document_loaders import PyPDFLoader, TextLoader
 
 
 
-loader = TextLoader("./rag_tools_reference/acme_investment_policies.txt", autodetect_encoding=True)
+loader = TextLoader("./rag_tools_reference/ocre_investment_policies.txt", autodetect_encoding=True)
 documents = loader.load()
 text_splitter = CharacterTextSplitter(chunk_size=1500, chunk_overlap=200)
 texts = text_splitter.split_documents(documents)
